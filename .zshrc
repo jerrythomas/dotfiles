@@ -1,0 +1,1 @@
+source ./spaceship.zsh
