@@ -12,3 +12,4 @@
 # rm -rf $TMPDIR
 
 sudo chsh -s $(brew --prefix)/bin/zsh
+mkdir ~/.nvm
