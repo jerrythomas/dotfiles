@@ -11,5 +11,6 @@
 # cd $CURRENT
 # rm -rf $TMPDIR
 
-sudo chsh -s $(brew --prefix)/bin/zsh
+ln -s ~/.dotfiles/.spaceshiprc.zsh ~/.spaceshiprc.zsh
 mkdir ~/.nvm
+$(brew --prefix)/bin/zsh
