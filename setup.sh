@@ -13,4 +13,5 @@
 
 ln -s ~/.dotfiles/.spaceshiprc.zsh ~/.spaceshiprc.zsh
 mkdir ~/.nvm
+echo "source ~/.dotfiles/.zshrc" >>! ~/.zshrc
 $(brew --prefix)/bin/zsh
