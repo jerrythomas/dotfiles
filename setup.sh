@@ -1,16 +1,6 @@
 #!/bin/bash
 
-# TMPDIR=$(mktemp -d)
-# CURRENT=$PWD
-
-# cd $TMPDIR
-# for script in ~/.dotfiles/scripts/*; do
-#   bash "$script"
-# done
-
-# cd $CURRENT
-# rm -rf $TMPDIR
-
+mkdir ~/.dotfiles
 ln -s ~/.dotfiles/.spaceshiprc.zsh ~/.spaceshiprc.zsh
 ln -s ~/.dotfiles/utils.zsh ~/utils.zsh
 mkdir ~/.nvm
