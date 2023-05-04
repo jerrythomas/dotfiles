@@ -73,35 +73,8 @@ function pyopencv {
   ln -s $ORIG $VENV/lib/$VERSION/site-packages/cv2.so
 }
 
-# List or create a file with the current atom packages
-function atom_package_list() {
-  if [ $# -eq 0 ]
-  then
-    apm list --installed --bare | grep '^[^@]\+' -o
-  else
-    PKG_FILE=$1
-    if [ -f $PKG_FILE ]; then
-       rm -f $PKG_FILE
-    fi
-    apm list --installed --bare | grep '^[^@]\+' -o > $PKG_FILE
-  fi
-}
-
 function hist() {
-  #fc -nl 0 | grep "$@"
   noglob fc -nl 0 | grep --color=auto "$@"
-}
-
-# Create a fresh angular project with material theme
-function angular() {
-  project=$1
-  ng new $project --style=scss --routing
-  cd $project
-
-  yarn add husky prevent-forbidden-code --dev
-  mv package.json package.json.old
-  jq -s '.[0] * .[1]' package.json.old $ZDOTDIR/.zprezto/runcoms/husky.json > package.json
-  rm -f package.json.old
 }
 
 # Upgrade all outdated global packages
