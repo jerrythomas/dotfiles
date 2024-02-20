@@ -1,9 +1,11 @@
 # Taps
-tap "homebrew/cask-versions"
+tap "homebrew/versions"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "grpc/grpc"
 tap "brewsci/base"
+tap "libsql/sqld"
+tap "tursodatabase/tap"
 
 # Development
 brew "llvm"
@@ -25,6 +27,10 @@ brew "yarn"
 brew "cookiecutter"
 brew "heroku"
 brew "awscli"
+brew "bun"
+brew "docker"
+brew "docker-compose"
+brew "zig"
 
 # Elasticsearch and related tools
 brew "elasticsearch"
@@ -38,6 +44,8 @@ brew "mongodb"
 brew "mariadb"
 brew "cassandra"
 brew "presto"
+brew "redis"
+brew "turso"
 
 # Python and related packages
 brew "python3"
@@ -76,7 +84,9 @@ cask "font-victor-mono"
 cask "couchbase-server-community"
 cask "google-cloud-sdk"
 cask "podman"
+cask "podman-desktop"
 cask "virtualbox"
+cask "zed"
 cask "visual-studio-code"
 cask "intellij-idea-ce"
 cask "pycharm-ce"
@@ -99,5 +109,14 @@ cask "vlc"
 cask "rstudio"
 
 # Casks: Browsers
-cask "google-chrome"
+#cask "google-chrome"
 cask "firefox"
+cask "opera-developer"
+cask "arc"
+
+# Casks: Utilities
+cask "calibre"
+cask "raycast"
+cask "transmission"
+cask "yacreader"
+# Other
