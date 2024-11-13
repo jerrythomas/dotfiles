@@ -1,0 +1,5 @@
+# Elasticsearch and related tools
+brew "elasticsearch"
+brew "apm-server"
+brew "filebeat"
+brew "kibana"

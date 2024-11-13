@@ -23,7 +23,6 @@ brew "jenv"
 brew "rbenv"
 brew "pyenv"
 brew "nvm"
-brew "yarn"
 brew "cookiecutter"
 brew "heroku"
 brew "awscli"
@@ -31,12 +30,8 @@ brew "bun"
 brew "docker"
 brew "docker-compose"
 brew "zig"
-
-# Elasticsearch and related tools
-brew "elasticsearch"
-brew "apm-server"
-brew "filebeat"
-brew "kibana"
+brew "rust"
+brew "kind"
 
 # Databases
 brew "postgresql"
@@ -73,23 +68,37 @@ brew "udunits"
 brew "libgit2"
 brew "tcl-tk"
 brew "libomp"
+brew "openblas"
+
+# Required for postgresql
+brew "libpq"
+brew "postgis"
 
 # Mac App Store command line
 brew "mas"
 
 # Casks: Fonts
 cask "font-victor-mono"
+cask "font-fira-code-nerd-font"
+cask "font-handlee"
+cask "font-montserrat"
+cask "font-montserrat-alternates"
+cask "font-sf-mono"
+cask "font-sf-pro"
+cask "font-sf-compact"
 
 # Casks: Development
 cask "couchbase-server-community"
 cask "google-cloud-sdk"
 cask "podman"
 cask "podman-desktop"
-cask "virtualbox"
+#cask "virtualbox"
+
+# Casks: Editors
 cask "zed"
 cask "visual-studio-code"
-cask "intellij-idea-ce"
-cask "pycharm-ce"
+#cask "intellij-idea-ce"
+#cask "pycharm-ce"
 cask "pgadmin4"
 cask "insomnia"
 
@@ -109,14 +118,18 @@ cask "vlc"
 cask "rstudio"
 
 # Casks: Browsers
-#cask "google-chrome"
+cask "google-chrome"
 cask "firefox"
 cask "opera-developer"
-cask "arc"
 
 # Casks: Utilities
 cask "calibre"
 cask "raycast"
 cask "transmission"
 cask "yacreader"
-# Other
+cask "tableplus"
+cask "jdowloader"
+
+# AI
+brew "ollama"
+cask "amazon-q"
