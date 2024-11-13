@@ -1,41 +1,27 @@
-
-fg="\e[38;5;"
-bg="\e[48;5;"
-reset="\e[0m"
-
-grey="0m"
-red="1m"
-green="2m"
-yellow="3m"
-blue="4m"
-pink="5m"
-green="6m"
-white="7m"
-
 # custom color 8-255 with suffix m
 # 16 colors uses \e[30m to \e[37m
 # replace m with ;3m for italic, ;2m for highcontrast
 
 # Username
 SPACESHIP_USER_SHOW=always
-SPACESHIP_USER_PREFIX="┌"
-SPACESHIP_USER_SUFFIX=""
-SPACESHIP_USER_COLOR="cyan"
+SPACESHIP_USER_PREFIX="┌["
+SPACESHIP_USER_SUFFIX="%f"
+SPACESHIP_USER_COLOR="33"
 
 # Hostname
 SPACESHIP_HOST_SHOW=always
 SPACESHIP_HOST_PREFIX=@
 SPACESHIP_HOST_COLOR="72"
-SPACESHIP_HOST_SUFFIX=") "
+SPACESHIP_HOST_SUFFIX="] "
 
 SPACESHIP_DOCKER_PREFIX="using "
 SPACESHIP_DOCKER_COLOR="117"
 SPACESHIP_DIR_COLOR="215"
 
 # Prompt
-SPACESHIP_CHAR_PREFIX="└❯"
+SPACESHIP_CHAR_PREFIX="└❯%F{##4B4DFF}"
 SPACESHIP_CHAR_SYMBOL="❯ "
-SPACESHIP_CHAR_COLOR_SECONDARY=yellow
+SPACESHIP_CHAR_SUFFIX="%f"
 
 SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=true
@@ -94,4 +80,3 @@ spaceship remove ibmcloud
 # Add a custom vi-mode section to the prompt
 # See: https://github.com/spaceship-prompt/spaceship-vi-mode
 #spaceship add --before char vi_mode
-

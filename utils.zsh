@@ -98,4 +98,4 @@ function ssh_id(){
 function dcc() {
   docker rmi -f $(docker images | grep "$1" | tr -s ' ' | cut -d ' ' -f 3)
 }
-source <(tkn completion zsh)
+# source <(tkn completion zsh)

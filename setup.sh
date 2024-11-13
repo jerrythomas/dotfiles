@@ -26,6 +26,9 @@ fi
 brew bundle --file="$(dirname "$0")/Brewfile"
 
 # Check if "source ~/.dotfiles/.zshrc" entry exists in ~/.zshrc, if not append it
+if [ ! -f ~/.zshrc ]; then
+   touch ~/.zshrc
+fi
 if ! grep -q "source ~/.dotfiles/.zshrc" ~/.zshrc; then
     echo "source ~/.dotfiles/.zshrc" >> ~/.zshrc
 fi

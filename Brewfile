@@ -1,17 +1,14 @@
 # Taps
-tap "homebrew/versions"
-tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "grpc/grpc"
 tap "brewsci/base"
 tap "libsql/sqld"
-tap "tursodatabase/tap"
+tap "oven-sh/bun"
 
 # Development
+brew "spaceship"
 brew "llvm"
-brew "gcc", args: ["without-multilib"]
-brew "grpc", args: ["with-plugins"]
-brew "go", args: ["cross-compile-common"]
+#brew "gcc", args: ["without-multilib"]
+#brew "grpc", args: ["with-plugins"]
 brew "libomp"
 brew "rlwrap"
 brew "wget"
@@ -24,7 +21,6 @@ brew "rbenv"
 brew "pyenv"
 brew "nvm"
 brew "cookiecutter"
-brew "heroku"
 brew "awscli"
 brew "bun"
 brew "docker"
@@ -34,18 +30,16 @@ brew "rust"
 brew "kind"
 
 # Databases
-brew "postgresql"
-brew "mongodb"
+brew "postgresql@17"
 brew "mariadb"
 brew "cassandra"
-brew "presto"
+brew "prestodb"
 brew "redis"
-brew "turso"
 
 # Python and related packages
 brew "python3"
 brew "numpy"
-brew "opencv3"
+brew "opencv"
 brew "protobuf"
 brew "boost-python3"
 brew "tesseract", args: ['HEAD']
@@ -53,7 +47,7 @@ brew "apache-arrow"
 
 # Document processing and related packages
 brew "pandoc"
-brew "pandoc-citeproc"
+#brew "pandoc-citeproc"
 brew "jpeg"
 brew "libpng"
 brew "libtiff"
@@ -62,7 +56,7 @@ cask "mactex"
 
 # R and related packages
 brew "R"
-brew "rstudio-server"
+#brew "rstudio-server"
 brew "libxml2"
 brew "udunits"
 brew "libgit2"
@@ -84,15 +78,13 @@ cask "font-handlee"
 cask "font-montserrat"
 cask "font-montserrat-alternates"
 cask "font-sf-mono"
-cask "font-sf-pro"
-cask "font-sf-compact"
+#cask "font-sf-pro"
+#cask "font-sf-compact"
 
 # Casks: Development
 cask "couchbase-server-community"
 cask "google-cloud-sdk"
-cask "podman"
 cask "podman-desktop"
-#cask "virtualbox"
 
 # Casks: Editors
 cask "zed"
@@ -128,8 +120,8 @@ cask "raycast"
 cask "transmission"
 cask "yacreader"
 cask "tableplus"
-cask "jdowloader"
+cask "jdownloader"
 
 # AI
-brew "ollama"
+cask "ollama"
 cask "amazon-q"
