@@ -9,5 +9,5 @@ Clone this repo and run the `setup.sh`.
 
 ## Prerequisite
 
-Install [homebrew](https://brew.sh)
+XCode commandline tools should be installed to clone the repo. Or you could download the zip from browser.
 
