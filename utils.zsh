@@ -99,3 +99,5 @@ function dcc() {
   docker rmi -f $(docker images | grep "$1" | tr -s ' ' | cut -d ' ' -f 3)
 }
 # source <(tkn completion zsh)
+
+alias git-sync="git pull && git checkout develop && git merge main && git push origin develop"
